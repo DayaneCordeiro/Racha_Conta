@@ -17,33 +17,54 @@ class MyApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var orangeColor = new Color(0xFFF9AC18);
     return new Scaffold(
-        /* Função que preenche os espaços da tela, barra de cima... */
-        appBar: AppBar(
-          title: Text('Racha conta', style: TextStyle(fontFamily: 'Poppins', color: new Color(0XFF3c3b40)),),
-          backgroundColor: new Color(0xFFF9AC18),
-          centerTitle: true,
-        ),
-        body: Column(
-          children: <Widget>[
-            Text('Como você gostaria de dividir a conta?'),
-            RaisedButton(
-              child: Text('Mesmo valor para todos'),
+      appBar: AppBar(
+        title: Text('Racha conta', style: TextStyle(fontFamily: 'Poppins', color: new Color(0XFF3c3b40)),),
+        backgroundColor: orangeColor,
+        centerTitle: true,
+      ),
+      body: Column(
+        children: <Widget>[
+
+          /* PAGE TITLE */
+          Padding(padding: new EdgeInsets.fromLTRB(40.0,90.0,40.0,40.0,),
+          child: Text(
+            'Como você gostaria de dividir a conta?',
+            style: TextStyle(fontSize: 26, fontFamily: 'Poppins'),
+            textAlign: TextAlign.center),
+          ),
+
+          /* COMMON DIVISION */
+          ButtonTheme(
+            minWidth: 230.0,
+            height: 60.0,
+            child: RaisedButton(
+              child: Text('Mesmo valor para todos', style: TextStyle(fontSize: 16, fontFamily: 'Poppins'),),
+              color: orangeColor,
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ConsumoTotal()),
-                );
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ConsumoTotal()),);
               }
             ),
-            RaisedButton(
-              child: Text('Pelo consumo individual'),
+          ),
+
+          Padding(padding: new EdgeInsets.fromLTRB(0.0,0.0,0.0,40.0,)),
+
+          /* INDIVIDUAL DIVISION */
+          ButtonTheme(
+            minWidth: 230.0,
+            height: 60.0,
+            child: RaisedButton(            
+              child: Text('Pelo consumo individual', style: TextStyle(fontSize: 16, fontFamily: 'Poppins'),),
+              color: orangeColor,
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => PrimeiroPasso()),
-                );
+                Navigator.push(context, MaterialPageRoute(builder: (context) => PrimeiroPasso()),);
               },
             ),
-          ]
-        )
-      );
+          )
+        ]
+      ),
+    );
   }
 }
 
