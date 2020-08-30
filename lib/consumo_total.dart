@@ -104,7 +104,7 @@ class ConsumoTotalState extends State<ConsumoTotal> {
 
                     Padding(padding: new EdgeInsets.fromLTRB(0.0,15.0,0.0,0.0,)),
 
-                    /* PEOPLE ICON */
+                    /* SERVICE CHARGE ICON */
                     Container(
                       alignment: Alignment.bottomLeft,
                       child: Icon(
@@ -136,7 +136,7 @@ class ConsumoTotalState extends State<ConsumoTotal> {
                         child: Text('Calcular', style: TextStyle(fontSize: 16, fontFamily: 'Poppins'),),
                         color: orangeColor,
                         onPressed: () {
-                          if (form_consumo.currentState.validate())
+                          if (form_consumo.currentState.validate()) {
                             custo = double.parse(total_value.text);
                             pessoas  = int.parse(total_people.text);
                             taxa  = double.parse(total_service_charge.text);
@@ -170,6 +170,7 @@ class ConsumoTotalState extends State<ConsumoTotal> {
                                 );
                               },
                             );
+                          }
                         },
                       ),
                     ),
