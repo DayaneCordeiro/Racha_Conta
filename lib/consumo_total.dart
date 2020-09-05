@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(ConsumoTotal());
-
 class ConsumoTotal extends StatefulWidget {
   @override
   ConsumoTotalState createState() => ConsumoTotalState();
@@ -174,11 +172,13 @@ class ConsumoTotalState extends State<ConsumoTotal> {
 
                                   total_taxa = custo * (taxa / 100);
                                   total = custo + total_taxa;
-                                  total_individual = (custo + total_taxa) / pessoas;
+                                  total_individual =
+                                      (custo + total_taxa) / pessoas;
 
-                                  result_individual = total_individual.toStringAsFixed(2);
-                                  result_taxa       = total_taxa.toStringAsFixed(2);
-                                  result            = total.toStringAsFixed(2);
+                                  result_individual =
+                                      total_individual.toStringAsFixed(2);
+                                  result_taxa = total_taxa.toStringAsFixed(2);
+                                  result = total.toStringAsFixed(2);
 
                                   return showDialog<void>(
                                     context: context,
