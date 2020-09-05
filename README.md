@@ -8,7 +8,7 @@
   * Aplicação móvel desenvolvida em Dart e Flutter.
   
 * Objetivo da aplicação:
-  * dividir contas de bares entre amigos, calculando automáticamente valor de taxa de serviço, valor que cada um deve desembolsar e valor final do consumo. Na versão 2.0, a tela principal foi alterada para permitir que haja divisão pelo consumo individual também.
+  * Dividir contas de bares entre amigos, calculando automáticamente valor de taxa de serviço, valor que cada um deve desembolsar e valor final do consumo. Na versão 2.1, a tela principal foi alterada para permitir que haja divisão pelo consumo individual também.
   
 * **Entradas do usuário:**
   * Na tela de consumo total:
