@@ -34,6 +34,10 @@ class ConsumoTotalState extends State<ConsumoTotal> {
     String result_individual;
 
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.orange,
+        ),
         home: Scaffold(
             /* Função que preenche os espaços da tela, barra de cima... */
             appBar: AppBar(

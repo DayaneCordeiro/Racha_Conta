@@ -91,7 +91,7 @@ class _TaxaServicoPageState extends State<TaxaServicoPage> {
               height: 60.0,
               child: RaisedButton(
                 child: Text(
-                  'Mesmo valor para todos',
+                  'Próximo passo',
                   style: TextStyle(
                     fontSize: 16,
                     fontFamily: 'Popins',
