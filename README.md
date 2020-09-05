@@ -1,7 +1,7 @@
 # Racha Conta 💰
 
 * Link para o vídeo com a apresentação da aplicação:
- * https://reccloud.com/pt/u/npfzxyq
+  * https://reccloud.com/pt/u/npfzxyq
 
 * Descrição:
   * Trabalho de Laboratório de Desenvolvimento para Dispositivos Móveis.
